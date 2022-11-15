@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-27T06:51:04.025Z",
+    "end": "2022-10-27T06:51:22.754Z",
+    "duration": 18729,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "57c88755-8bb4-4836-a82e-a96f07690b3f",
+      "title": "",
+      "fullFile": "cypress\\integration\\Examples\\BDD\\ecommerce.feature",
+      "file": "cypress\\integration\\Examples\\BDD\\ecommerce.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cec798d6-d16a-4976-8e0a-1657fb535f73",
+          "title": "End to end ecommerce validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ecommerce product delivery",
+              "fullTitle": "End to end ecommerce validation Ecommerce product delivery",
+              "timedOut": null,
+              "duration": 15726,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 8050ms: `cy.click()` failed because this element:\n\n`<div class=\"checkbox checkbox-primary\">...</div>`\n\nis being covered by another element:\n\n`<a>India</a>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 8050ms: `cy.click()` failed because this element:\n\n`<div class=\"checkbox checkbox-primary\">...</div>`\n\nis being covered by another element:\n\n`<a>India</a>`\n\nFix this problem, or use {force: true} to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:147600:78)\n    at ensureDescendents (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:133073:8)\n    at ensureDescendentsAndScroll (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:133080:14)\n    at ensureElIsNotCovered (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:133212:5)\n    at runAllChecks (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:133402:52)\n    at retryActionability (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:133426:16)\n    at tryCatcher (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise.attempt.Promise.try (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:8592:29)\n    at whenStable (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:152665:65)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:152095:14)\n    at tryCatcher (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:11318:23)\n    at Promise._settlePromiseFromHandler (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:9253:31)\n    at Promise._settlePromise (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:9310:18)\n    at Promise._settlePromise0 (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:9355:10)\n    at Promise._settlePromises (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:9435:18)\n    at Promise._fulfill (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:9379:18)\n    at <unknown> (https://rahulshettyacademy.com/__cypress/runner/cypress_runner.js:10993:46)\nFrom Your Spec Code:\n    at Context.eval (cypress/integration/Examples/BDD/ecommerce/eComstepdef.js:40:24)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)",
+                "diff": null
+              },
+              "uuid": "19aa4720-95eb-4dd5-a952-f311dd344199",
+              "parentUUID": "cec798d6-d16a-4976-8e0a-1657fb535f73",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "User Login",
+              "fullTitle": "End to end ecommerce validation User Login",
+              "timedOut": null,
+              "duration": 686,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "938f1dbd-57c4-4b39-a67b-e392fd7f2a27",
+              "parentUUID": "cec798d6-d16a-4976-8e0a-1657fb535f73",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "938f1dbd-57c4-4b39-a67b-e392fd7f2a27"
+          ],
+          "failures": [
+            "19aa4720-95eb-4dd5-a952-f311dd344199"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16412,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
